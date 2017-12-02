@@ -10,16 +10,14 @@ using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
 
-/*TODO:
-    
-    Close file when exit
 
-     */
 
 namespace ZipBomb
 {
     public partial class Form1 : Form
     {
+        public char CharToAdd = '0';
+
         public Form1()
         {
             InitializeComponent();
@@ -29,7 +27,15 @@ namespace ZipBomb
         private void Form1_Resize(object sender, EventArgs e)
         {
             if (!(ActiveForm is null))
-                ProgressBar.Size = new Size(ActiveForm.Size.Width - 40, 23);
+            {
+                ProgressBar.Size = new Size(ActiveForm.Width - 40, 24);
+                ProgressBar.Location = new Point(12, ActiveForm.Height - 75);
+                ZipButton.Location = new Point(ActiveForm.Width / 2 - 83, ActiveForm.Height - 125);
+                FileName.Size = new Size(ActiveForm.Width - 285, 20);
+                LinesNb.Size = new Size(ActiveForm.Width - 285, 20);
+                Parcourir.Location = new Point(ActiveForm.Width - 125, 59);
+                UnitChanger.Location = new Point(ActiveForm.Width - 125, 97);
+            }
         }
 
         private void ZipButton_Click(object sender, EventArgs e)
@@ -71,7 +77,7 @@ namespace ZipBomb
             {
                 string ToWrite = "";
                 for (int i = 0; i < LinesNb.Value; i++)
-                    ToWrite += "0";
+                    ToWrite += CharToAdd;
 
                 double Max = Math.Pow(1000, Convert.ToDouble(e.Argument));
 

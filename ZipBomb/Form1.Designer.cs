@@ -87,9 +87,9 @@
             // 
             // ProgressBar
             // 
-            this.ProgressBar.Location = new System.Drawing.Point(12, 318);
+            this.ProgressBar.Location = new System.Drawing.Point(12, 200);
             this.ProgressBar.Name = "ProgressBar";
-            this.ProgressBar.Size = new System.Drawing.Size(460, 23);
+            this.ProgressBar.Size = new System.Drawing.Size(460, 24);
             this.ProgressBar.Step = 1;
             this.ProgressBar.TabIndex = 1;
             // 
@@ -102,16 +102,16 @@
             "Mo",
             "Go",
             "To"});
-            this.UnitChanger.Location = new System.Drawing.Point(302, 97);
+            this.UnitChanger.Location = new System.Drawing.Point(375, 97);
             this.UnitChanger.Name = "UnitChanger";
-            this.UnitChanger.Size = new System.Drawing.Size(52, 21);
+            this.UnitChanger.Size = new System.Drawing.Size(71, 21);
             this.UnitChanger.TabIndex = 2;
             // 
             // ZipButton
             // 
-            this.ZipButton.Location = new System.Drawing.Point(198, 155);
+            this.ZipButton.Location = new System.Drawing.Point(167, 150);
             this.ZipButton.Name = "ZipButton";
-            this.ZipButton.Size = new System.Drawing.Size(104, 25);
+            this.ZipButton.Size = new System.Drawing.Size(150, 25);
             this.ZipButton.TabIndex = 3;
             this.ZipButton.Text = "Zip Bomb !";
             this.ZipButton.UseVisualStyleBackColor = true;
@@ -119,7 +119,7 @@
             // 
             // LinesNb
             // 
-            this.LinesNb.Location = new System.Drawing.Point(143, 98);
+            this.LinesNb.Location = new System.Drawing.Point(120, 98);
             this.LinesNb.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -131,7 +131,7 @@
             0,
             0});
             this.LinesNb.Name = "LinesNb";
-            this.LinesNb.Size = new System.Drawing.Size(120, 20);
+            this.LinesNb.Size = new System.Drawing.Size(215, 20);
             this.LinesNb.TabIndex = 4;
             this.LinesNb.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.LinesNb.Value = new decimal(new int[] {
@@ -143,7 +143,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(42, 100);
+            this.label1.Location = new System.Drawing.Point(23, 100);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 5;
@@ -156,7 +156,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 64);
+            this.label2.Location = new System.Drawing.Point(23, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 6;
@@ -164,19 +164,19 @@
             // 
             // FileName
             // 
-            this.FileName.Location = new System.Drawing.Point(143, 61);
+            this.FileName.Location = new System.Drawing.Point(120, 61);
             this.FileName.Name = "FileName";
             this.FileName.ReadOnly = true;
             this.FileName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.FileName.Size = new System.Drawing.Size(211, 20);
+            this.FileName.Size = new System.Drawing.Size(215, 20);
             this.FileName.TabIndex = 7;
             this.FileName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Parcourir
             // 
-            this.Parcourir.Location = new System.Drawing.Point(372, 59);
+            this.Parcourir.Location = new System.Drawing.Point(375, 59);
             this.Parcourir.Name = "Parcourir";
-            this.Parcourir.Size = new System.Drawing.Size(75, 23);
+            this.Parcourir.Size = new System.Drawing.Size(71, 23);
             this.Parcourir.TabIndex = 8;
             this.Parcourir.Text = "Parcourir";
             this.Parcourir.UseVisualStyleBackColor = true;
@@ -224,7 +224,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 361);
+            this.ClientSize = new System.Drawing.Size(484, 236);
             this.Controls.Add(this.Parcourir);
             this.Controls.Add(this.FileName);
             this.Controls.Add(this.label2);
@@ -235,7 +235,7 @@
             this.Controls.Add(this.ProgressBar);
             this.Controls.Add(this.MenuStrip);
             this.MainMenuStrip = this.MenuStrip;
-            this.MinimumSize = new System.Drawing.Size(300, 300);
+            this.MinimumSize = new System.Drawing.Size(400, 275);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Resize += new System.EventHandler(this.Form1_Resize);
