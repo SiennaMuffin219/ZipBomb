@@ -33,13 +33,14 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Ok = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(18, 17);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(170, 156);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -61,7 +62,7 @@
             // 
             // Ok
             // 
-            this.Ok.Location = new System.Drawing.Point(160, 298);
+            this.Ok.Location = new System.Drawing.Point(319, 201);
             this.Ok.Name = "Ok";
             this.Ok.Size = new System.Drawing.Size(100, 23);
             this.Ok.TabIndex = 2;
@@ -72,18 +73,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 202);
+            this.label1.Location = new System.Drawing.Point(13, 185);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(273, 13);
+            this.label1.Size = new System.Drawing.Size(273, 26);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Écrit par Olivier Pautrat (olivier.pautrat@etu.univ-lyon1.fr)";
+            this.label1.Text = "Écrit par Olivier Pautrat (olivier.pautrat@etu.univ-lyon1.fr)\r\nCopyright © 2017 S" +
+    "iennaMuffin219\r\n";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(13, 211);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(227, 13);
+            this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "https://github.com/SiennaMuffin219/ZipBomb";
             // 
             // About
             // 
             this.AcceptButton = this.Ok;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 361);
+            this.ClientSize = new System.Drawing.Size(434, 246);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Ok);
             this.Controls.Add(this.textBox1);
@@ -103,5 +116,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button Ok;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
