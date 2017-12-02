@@ -42,7 +42,8 @@ namespace ZipBomb
         {
             if (saveFileDialog1.FileName != "")
             {
-                BackgroundWorker.RunWorkerAsync(UnitChanger.SelectedIndex);
+                if (!BackgroundWorker.IsBusy)
+                    BackgroundWorker.RunWorkerAsync(UnitChanger.SelectedIndex);
             }
             else
             {
